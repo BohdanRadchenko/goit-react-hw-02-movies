@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import MovieGrid from './MovieGrid/MovieGrid';
 import SearchBar from './SearchBar/SearchBar';
+import styles from './App.module.css';
 
 const findFilm = (array, value) => {
   return array.filter(el =>
@@ -42,8 +43,8 @@ class App extends Component {
         <SearchBar getSearch={this.getSearch} />
         <MovieGrid items={filterFilm} />
         {filterFilm.length === 0 && (
-          <div>
-            <p>No matching results!</p>
+          <div className={styles.noResults}>
+            <p className={styles.noMatch}>No matching results!</p>
           </div>
         )}
       </div>

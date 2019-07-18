@@ -5,8 +5,8 @@ import styles from './MovieCard.module.css';
 
 const MovieCard = ({ title, posterUrl, overview }) => {
   return (
-    <div className={styles.MovieCard}>
-      <img src={posterUrl} alt={title} />
+    <div className={styles.movieCard}>
+      <img className={styles.img} src={posterUrl} alt={title} />
       <div className={styles.conent}>
         <h2 className={styles.title}>{title}</h2>
         <p className={styles.descr}>{overview}</p>

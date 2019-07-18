@@ -5,7 +5,7 @@ import styles from './MovieGrid.module.css';
 
 const MovieGrid = ({ items }) => {
   return (
-    <ul className={styles.MovieGrid}>
+    <ul className={styles.movieGrid}>
       {items.map(el => (
         <li key={el.id}>
           <MovieCard {...el} />

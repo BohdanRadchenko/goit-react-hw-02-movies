@@ -6,7 +6,7 @@ import styles from './SearchBar.module.css';
 
 const SearchBar = ({ getSearch }) => {
   return (
-    <form>
+    <form className={styles.searchBar}>
       <input
         className={styles.input}
         type="text"

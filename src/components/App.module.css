@@ -1,0 +1,9 @@
+.noResults {
+  display: block;
+  text-align: center;
+}
+
+.noMatch {
+  font-size: 18px;
+  /* text-transform: uppercase; */
+}
